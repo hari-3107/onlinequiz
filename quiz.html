@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form-submission</title>
+		<link rel="stylesheet" href="quiz.css"/>
+		
+	</head>
+	<body>
+	   <div id="total">
+		<div id="left">
+		</div>
+		<div id="main">
+			<div id="head">
+				<h3>ONLINE-QUIZ</h3>
+			</div>
+			<div id="table1">
+			<form method="POST">
+			<table>
+				<tr>
+					<td>user_id</td>
+					<td><input type="text" name="user_id"/></td>
+				</tr>
+				<tr>
+					<td>password</td>
+					<td><input type="password" name="password"/></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="login"/></td>
+					<td style="white-space:pre;"><a href="abcd.html"><u>forgot password?</u></td>
+				</tr>
+			</table>
+			</form>
+			</div>
+		</div>
+		<div id="right">
+		<form action="authenticate.php" method="POST">
+		<table id="form">
+		<caption> New User? Sign Up</caption>
+		<tr>
+		<td>Name</td>
+		<td><input type="text" placeholder="Firstname" name="firstname"/></td>
+		<td width="100px"><input type="text" placeholder="Lastname" name="lastname"/></td>	
+		</tr>
+		<tr>
+		<td>DoB</td>
+		<td colspan="2"><input type="datetime-local" placeholder="yyyy-mm-dd" name="age"/></td>
+		</tr>
+		<tr>
+		<td>Email</td>
+		<td><input type="el" placeholder="youremail@hostname" name="mail"></td>
+		</tr>
+		<tr>
+		<td>Mob</td>
+		<td><input type="tel" name="mob"></td>
+		</tr>
+		<tr>
+		<td>Branch</td>
+	 	<td>   <select name="branch">
+  		<option value="CSE">CSE</option>
+  		<option value="EEE">EEE</option>
+  		<option value="ME">ME</option>
+  		<option value="EC">EC</option>
+  		<option value="IT">IT</option>
+		</select> 
+		</td>
+		<td>Semester
+	   <select name="semester">
+  		<option value="s1">S1</option>
+  		<option value="s2">S2</option>
+  		<option value="s3">S3</option>
+  		<option value="s4">s4</option>
+  		<option value="s5">S5</option>
+    	<option value="s6">S6</option>
+  		<option value="s7">S7</option>
+  		<option value="s8">S8</option>	
+		</select> 
+		</td>	
+		</tr>
+		<td><input type="submit" value="login"></td>
+		</tr>
+		</table>
+		</form>
+		</div>
+		<div id="bottom">
+		<p id="foot"> &copy;GEC Palakkad.</p></div>
+		</div>		
+	</body>
+</html>
